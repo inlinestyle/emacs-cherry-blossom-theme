@@ -130,7 +130,7 @@
  '(font-lock-string-face               ((t (:foreground "#FFB5D8"))))
  '(font-lock-constant-face             ((t (:foreground "#9a99e7"))))
  '(font-lock-type-face                 ((t (:foreground "#DD0B53"))))
- '(font-lock-variable-name-face        ((t (:foreground "#8e8eb8"))))
+ '(font-lock-variable-name-face        ((t (:foreground "#FEDA98"))))
  '(font-lock-warning-face              ((t (:weight bold :foreground "#FF0"))))
 
  ;; Hightlight
