@@ -60,21 +60,21 @@
  
  ;; Line Numbers (linum-mode)
  '(linum
-   ((((class color) (min-colors 88))  (:background "#000000" :foreground "#403047"))
+   ((((class color) (min-colors 88)) (:background "#000000" :foreground "#403047"))
     (t (:background "#151019" :foreground "#403047" :box nil :height 100))))
  
  ;; Margin Fringes
  '(fringe
-   ((((class color) (min-colors 88))  (:background "#111111" :foreground "#506080"))
-    (t ( :background "#201520" :Foreground "#506080" ))))
+   ((((class color) (min-colors 88)) (:background "#111111" :foreground "#506080"))
+    (t (:background "#201520" :Foreground "#506080"))))
  
  ;; Mode-line / status line
  '(mode-line
-   ((((class color) (min-colors 88))  (:background "#222222" :foreground "#8c86e4"))
+   ((((class color) (min-colors 88)) (:background "#222222" :foreground "#8c86e4"))
     (t (:background "#2b283d" :box nil :foreground "#8c86e4" :height 85))))
 
  '(mode-line-inactive
-   ((((class color) (min-colors 88))  (:background "#111111" :foreground "#000000"))
+   ((((class color) (min-colors 88)) (:background "#111111" :foreground "#000000"))
     (t (:weight light :box nil :background "#202339" :foreground "#000000" :inherit (mode-line)))))
  
  '(mode-line-emphasis ((t (:weight bold))))
@@ -99,7 +99,7 @@
  '(diff-context ((t (:foreground "#E0E4CC"))))
  '(diff-hunk-header ((t (:background "#242130"))))
  
- '(compilation-info  ((t (:foreground "#a09aF0"))))
+ '(compilation-info ((t (:foreground "#a09aF0"))))
  
  ;; Minibuffer
  '(minibuffer-prompt
@@ -117,20 +117,20 @@
    ((((class color) (min-colors 88) (background dark)) (:background "#444083"))))
  
  ;; font-lock - syntax
- '(font-lock-builtin-face              ((t (:foreground "#3EDAD4"))))
  '(font-lock-doc-face                  ((t (:foreground "#5F5A60"))))
  '(font-lock-comment-face              ((t (:foreground "#5F5A60"))))
  '(font-lock-comment-delimiter-face    ((t (:foreground "#5F5A60"))))
  '(font-lock-function-name-face        ((t (:foreground "#F94FA0"))))
  '(font-lock-keyword-face              ((t (:foreground "#742FD1"))))
- '(font-lock-negation-char-face        ((t (:foreground "#0f0"))))
- '(font-lock-preprocessor-face         ((t (:inherit (font-lock-builtin-face)))))
- '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
- '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
  '(font-lock-string-face               ((t (:foreground "#FFB5D8"))))
- '(font-lock-constant-face             ((t (:foreground "#9a99e7"))))
+ '(font-lock-constant-face             ((t (:foreground "#3EDAD4"))))
+ '(font-lock-builtin-face              ((t (:foreground "#9a99e7"))))
  '(font-lock-type-face                 ((t (:foreground "#DD0B53"))))
  '(font-lock-variable-name-face        ((t (:foreground "#FEDA98"))))
+ '(font-lock-negation-char-face        ((t (:foreground "#0f0"))))
+ '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
+ '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
+ '(font-lock-preprocessor-face         ((t (:inherit (font-lock-builtin-face)))))
  '(font-lock-warning-face              ((t (:weight bold :foreground "#FF0"))))
 
  ;; Hightlight
@@ -188,15 +188,15 @@
 
 ;; Rainbow delimiters
 (defun cherry-blossom-rainbow-delim-set-face ()
-  (set-face-attribute 'rainbow-delimiters-depth-1-face nil :foreground "#362142")
-  (set-face-attribute 'rainbow-delimiters-depth-2-face nil :foreground "#482C58")
-  (set-face-attribute 'rainbow-delimiters-depth-3-face nil :foreground "#5A376E")
-  (set-face-attribute 'rainbow-delimiters-depth-4-face nil :foreground "#6C4284")
-  (set-face-attribute 'rainbow-delimiters-depth-5-face nil :foreground "#80529A")
-  (set-face-attribute 'rainbow-delimiters-depth-6-face nil :foreground "#926AA8")
-  (set-face-attribute 'rainbow-delimiters-depth-7-face nil :foreground "#A482B6")
-  (set-face-attribute 'rainbow-delimiters-depth-8-face nil :foreground "#B69AC4")
-  (set-face-attribute 'rainbow-delimiters-depth-9-face nil :foreground "#C8B2D2")
+  (set-face-attribute 'rainbow-delimiters-depth-1-face nil :foreground "#B2519C")
+  (set-face-attribute 'rainbow-delimiters-depth-2-face nil :foreground "#CAA2CD")
+  (set-face-attribute 'rainbow-delimiters-depth-3-face nil :foreground "#9B85AE")
+  (set-face-attribute 'rainbow-delimiters-depth-4-face nil :foreground "#9192BA")
+  (set-face-attribute 'rainbow-delimiters-depth-5-face nil :foreground "#B5BEDB")
+  (set-face-attribute 'rainbow-delimiters-depth-6-face nil :foreground "#7DD3CE")
+  (set-face-attribute 'rainbow-delimiters-depth-7-face nil :foreground "#97CC85")
+  (set-face-attribute 'rainbow-delimiters-depth-8-face nil :foreground "#ECEF7A")
+  (set-face-attribute 'rainbow-delimiters-depth-9-face nil :foreground "#EEB37D")
   (set-face-attribute 'rainbow-delimiters-unmatched-face nil :foreground "#F00"))
 
 (eval-after-load "rainbow-delimiters" '(cherry-blossom-rainbow-delim-set-face))
