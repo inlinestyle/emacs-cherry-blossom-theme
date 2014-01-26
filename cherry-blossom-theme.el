@@ -1,15 +1,16 @@
-;;; cherry-blossom-theme.el --- a chill color theme for Emacs24.
+;;; cherry-blossom-theme.el --- a soothing color theme for Emacs24.
 ;;
-;; started out with https://github.com/emacsfodder/emacs-purple-haze-theme as a template
 ;;
+
 ;;; Author: Ben Yelsey <byelsey1@gmail.com>
 ;;; Url: https://github.com/byels/emacs-cherry-blossom-theme
-;;; Version: 0.0.1
+;;; Version: 0.0.2
 ;;; Package-Requires: ((emacs "24.0"))
 
 ;;; Changelog:
 ;;
-;; 0.0.3    : initial private version
+;; 0.0.2    : initial public version
+;; 0.0.1    : started out with https://github.com/emacsfodder/emacs-purple-haze-theme as a template
 
 ;;; Licence:
 ;; This program is free software: you can redistribute it and/or modify
@@ -34,10 +35,6 @@
 
 (custom-theme-set-variables
  'cherry-blossom
- '(main-line-color1 "#191919")
- '(main-line-color2 "#111111")
- '(powerline-color1 "#191919")
- '(powerline-color2 "#111111")
  '(fringe-mode 6 nil (fringe))
  '(linum-format 'dynamic))
 
