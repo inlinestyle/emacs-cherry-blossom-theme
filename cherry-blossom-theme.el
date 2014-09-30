@@ -27,7 +27,7 @@
 ;;
 ;; This file is not a part of Emacs
 
-(unless (>= 24 emacs-major-version)
+(unless (>= emacs-major-version 24)
   (error "cherry-blossom-theme requires Emacs 24 or later."))
 
 (deftheme cherry-blossom
