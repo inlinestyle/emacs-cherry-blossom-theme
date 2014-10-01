@@ -180,23 +180,20 @@
 
  '(next-error ((t (:inherit (region)))))
 
- '(query-replace ((t (:inherit (isearch))))))
+ '(query-replace ((t (:inherit (isearch)))))
 
+ ;; Rainbow delimiters
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "#B2519C"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "#CAA2CD"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "#9B85AE"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "#9192BA"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "#B5BEDB"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "#7DD3CE"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "#97CC85"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "#ECEF7A"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "#EEB37D"))))
+ '(rainbow-delimiters-unmatched-face ((t (:foreground "#F00")))))
 
-;; Rainbow delimiters
-(defun cherry-blossom-rainbow-delim-set-face ()
-  (set-face-attribute 'rainbow-delimiters-depth-1-face nil :foreground "#B2519C")
-  (set-face-attribute 'rainbow-delimiters-depth-2-face nil :foreground "#CAA2CD")
-  (set-face-attribute 'rainbow-delimiters-depth-3-face nil :foreground "#9B85AE")
-  (set-face-attribute 'rainbow-delimiters-depth-4-face nil :foreground "#9192BA")
-  (set-face-attribute 'rainbow-delimiters-depth-5-face nil :foreground "#B5BEDB")
-  (set-face-attribute 'rainbow-delimiters-depth-6-face nil :foreground "#7DD3CE")
-  (set-face-attribute 'rainbow-delimiters-depth-7-face nil :foreground "#97CC85")
-  (set-face-attribute 'rainbow-delimiters-depth-8-face nil :foreground "#ECEF7A")
-  (set-face-attribute 'rainbow-delimiters-depth-9-face nil :foreground "#EEB37D")
-  (set-face-attribute 'rainbow-delimiters-unmatched-face nil :foreground "#F00"))
-
-(eval-after-load "rainbow-delimiters" '(cherry-blossom-rainbow-delim-set-face))
 
 ;; Add to custom-theme-load-path
 ;;;###autoload
