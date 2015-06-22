@@ -3,7 +3,7 @@
 ;;
 
 ;;; Author: Ben Yelsey <byelsey1@gmail.com>
-;;; Url: https://github.com/byels/emacs-cherry-blossom-theme
+;;; Url: https://github.com/inlinestyle/emacs-cherry-blossom-theme
 ;;; Version: 0.0.2
 ;;; Package-Requires: ((emacs "24.0"))
 
@@ -31,7 +31,7 @@
   (error "cherry-blossom-theme requires Emacs 24 or later."))
 
 (deftheme cherry-blossom
-  "cherry-blossom-theme By: Ben Yelsey - github.com/byels")
+  "cherry-blossom-theme By: Ben Yelsey - github.com/inlinestyle")
 
 (custom-theme-set-variables
  'cherry-blossom
